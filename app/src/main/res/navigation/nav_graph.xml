@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/companyListFragment">
+
+    <fragment
+        android:id="@+id/companyListFragment"
+        android:name="com.fedorskvortsov.companies.ui.list.fragment.CompanyListFragment"
+        android:label="@string/app_name" >
+        <action
+            android:id="@+id/action_companyListFragment_to_companyDetailFragment"
+            app:destination="@id/companyDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/companyDetailFragment"
+        android:name="com.fedorskvortsov.companies.ui.detail.fragment.CompanyDetailFragment"
+        android:label="{companyName}" >
+        <argument
+            android:name="companyId"
+            app:argType="integer" />
+        <argument
+            android:name="companyName"
+            app:argType="string" />
+    </fragment>
+</navigation>

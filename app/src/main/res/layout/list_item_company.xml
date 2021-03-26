@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fedorskvortsov.companies.ui.view.MaskedCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/card_side_margin"
+    android:layout_marginEnd="@dimen/card_side_margin"
+    android:layout_marginBottom="@dimen/card_bottom_margin"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardPreventCornerOverlap="false"
+    app:shapeAppearance="@style/ShapeAppearance.Companies.Card"
+    tools:context=".ui.activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/companyItemImage"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/a11y_company_item_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/companyItemTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/companyItemImage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Company"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.fedorskvortsov.companies.ui.view.MaskedCardView>

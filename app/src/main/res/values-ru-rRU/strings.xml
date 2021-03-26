@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Компании</string>
+    <string name="back">Назад</string>
+    <string name="company_logo">Логотип компании</string>
+    <string name="company_name">Название компании</string>
+    <string name="a11y_company_item_image">Picture of company</string>
+</resources>

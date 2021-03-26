@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Companies</string>
+    <string name="back">Back</string>
+    <string name="company_logo">Company Logo</string>
+    <string name="company_name">Company Name</string>
+    <string name="a11y_company_item_image">Picture of company</string>
+</resources>
