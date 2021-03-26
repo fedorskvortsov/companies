@@ -7,5 +7,6 @@
 
 ### To-do
 - Написать Custom JSON parser, так как в API не экранируется символ "двойные кавычки"
+- Обработка события com.android.volley.NoConnectionError: java.net.UnknownHostException при отсутствии подключения к сети интернет на устройстве
 - Material Transitions
 - Add Google Maps
